@@ -43,7 +43,7 @@ public extension Reactive where Base: View {
      Returns an observable `UIPinchGestureRecognizer` events sequence
      - parameter configuration: A closure that allows to fully configure the gesture recognizer
      */
-    public func pinchGesture(configuration: PinchConfiguration? = nil) -> PinchControlEvent {
+    func pinchGesture(configuration: PinchConfiguration? = nil) -> PinchControlEvent {
         return gesture(make(configuration: configuration))
     }
 }
@@ -53,7 +53,7 @@ public extension ObservableType where E: UIPinchGestureRecognizer {
     /**
      Maps the observable `GestureRecognizer` events sequence to an observable sequence of scale factors relative to the points of the two touches in screen coordinates alongside the gesture velocity.
      */
-    public func asScale() -> Observable<(scale: CGFloat, velocity: CGFloat)> {
+    func asScale() -> Observable<(scale: CGFloat, velocity: CGFloat)> {
         return self.map { gesture in
             return (gesture.scale, gesture.velocity)
         }

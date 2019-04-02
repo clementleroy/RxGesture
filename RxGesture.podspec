@@ -16,8 +16,8 @@ Pod::Spec.new do |s|
 
   s.homepage         = "https://github.com/RxSwiftCommunity/RxGesture"
   s.license          = 'MIT'
-  s.authors          = { "Marin Todorov" => "touch-code-magazine@underplot.com", "Jérôme Alves" => "j.alves@me.com" }
-  s.source           = { :git => "https://github.com/RxSwiftCommunity/RxGesture.git", :tag => s.version.to_s }
+  s.authors          = { "Marin Todorov": "touch-code-magazine@underplot.com", "Jérôme Alves": "j.alves@me.com" }
+  s.source           = { git: "https://github.com/RxSwiftCommunity/RxGesture.git", tag: s.version.to_s }
 
   s.requires_arc = true
 
@@ -29,7 +29,7 @@ Pod::Spec.new do |s|
   s.ios.source_files      = 'Pod/Classes/iOS/*.swift'
   s.osx.source_files      = 'Pod/Classes/OSX/*.swift'
 
-  s.dependency 'RxSwift', '~> 4.4.0'
-  s.dependency 'RxCocoa', '~> 4.4.0'
+  s.dependency 'RxSwift', '~> 4.5.0'
+  s.dependency 'RxCocoa', '~> 4.5.0'
 
 end

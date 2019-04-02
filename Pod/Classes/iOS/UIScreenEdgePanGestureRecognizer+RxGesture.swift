@@ -43,7 +43,7 @@ public extension Reactive where Base: View {
      Returns an observable `UIScreenEdgePanGestureRecognizer` events sequence
      - parameter configuration: A closure that allows to fully configure the gesture recognizer
      */
-    public func screenEdgePanGesture(configuration: ScreenEdgePanConfiguration? = nil) -> ScreenEdgePanControlEvent {
+    func screenEdgePanGesture(configuration: ScreenEdgePanConfiguration? = nil) -> ScreenEdgePanControlEvent {
         return gesture(make(configuration: configuration))
     }
 }

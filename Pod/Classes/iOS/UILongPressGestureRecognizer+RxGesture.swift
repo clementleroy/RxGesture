@@ -43,7 +43,7 @@ public extension Reactive where Base: View {
      Returns an observable `UILongPressGestureRecognizer` events sequence
      - parameter configuration: A closure that allows to fully configure the gesture recognizer
      */
-    public func longPressGesture(configuration: LongPressConfiguration? = nil) -> LongPressControlEvent {
+    func longPressGesture(configuration: LongPressConfiguration? = nil) -> LongPressControlEvent {
         return gesture(make(configuration: configuration))
     }
 }

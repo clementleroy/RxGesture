@@ -45,16 +45,16 @@ import Foundation
 public enum TargetView {
     /// The target view will be the gestureRecognizer's view
     case view
-
+    
     /// The target view will be the gestureRecognizer's view's superview
     case superview
-
+    
     /// The target view will be the gestureRecognizer's view's window
     case window
-
+    
     /// The target view will be the given view
     case this(View)
-
+    
     public func targetView(for gestureRecognizer: GestureRecognizer) -> View? {
         switch self {
         case .view:
